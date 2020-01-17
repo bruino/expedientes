@@ -1,0 +1,8 @@
+{{form.components.pop(0)}}
+<div class="h4 font-weight-bold">Movimientos</div>
+{{=form}}
+
+{{if request.args(1) == "case_file_history.case_file_id" and len(request.args) < 4 and len(form.element('.web2py_table').elements('tr')) > 0:}}
+        {{form.element('.web2py_table').elements('tr')[1].update(_class='table-danger')}}
+        
+{{pass}}

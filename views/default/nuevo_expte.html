@@ -1,0 +1,76 @@
+{{extend 'layout.html'}}
+
+{{=form.custom.begin}}
+<div>
+    <h4 class="text-primary">Nuevo Expediente</h4>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.auth_user_id}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.auth_user_id}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.created_by}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.created_by}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_subject}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.case_file_subject}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_new}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.case_file_new}}
+            </div>
+        </div>
+        <hr>
+        <div><h4 class="text-primary">Nuevo Movimiento del Expediente</h4></div>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_ingress}}</label>
+                    <div class="col-sm-8">
+                        {{=form.custom.widget.case_file_ingress}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group row">
+                    <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_egress}}</label>
+                    <div class="col-sm-8">
+                        {{=form.custom.widget.case_file_egress}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_to}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.case_file_to}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_status}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.case_file_status}}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label font-weight-bold">{{=form.custom.label.case_file_notes}}</label>
+            <div class="col-sm-8">
+                {{=form.custom.widget.case_file_notes}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ml-auto">{{=form.custom.submit}}</div>
+{{=form.custom.end}}

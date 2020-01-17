@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+{{end}}
+
+{{=form}}
+{{if request.args(0) == 'case_file' and request.args(1) == 'view' and request.args(2) == 'case_file' and request.args(3):}}
+  <hr>
+  {{=LOAD('default','case_file_history.load', args=['case_file','case_file_history.case_file_id', request.args(3)], ajax=True)}}
+  <hr>
+{{pass}}
