@@ -1,5 +1,8 @@
 # Sistema de Gestión de Expedientes
 Web2py app que registra las entradas y salidas de expedientes. Es usado para control interno de las oficinas que manejan resoluciones y respuestas a los mismos en el [Ministerio de Seguridad de la Provincia de Tucumán](https://minsegtuc.gov.ar).
+
+![asd](screenshot.png)
+![asd](screenshot_login.png)
   
 ## Instalación
 - Instalar [web2py](web2py.com)
